@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 import type { RequestInit } from "node-fetch";
 
+// TODO: list all possible statuses
 export type SurrealRESTResponse<T> = {
   time: string;
   status: "OK";
@@ -8,7 +9,7 @@ export type SurrealRESTResponse<T> = {
 };
 
 export class SurrealREST {
-  url = "https://api.surrealdb.com/v1/sql";
+  url = "https://api.surrealdb.com/v1/sql"; // I got this URL from copilot…
   ns: string | null = null;
   db: string | null = null;
   user: string | null = null;

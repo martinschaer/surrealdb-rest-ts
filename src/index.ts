@@ -1,5 +1,10 @@
-import fetch from "node-fetch";
-import type { RequestInit } from "node-fetch";
+import fetch from "isomorphic-fetch";
+
+type RequestInit = {
+  method: string,
+  headers?: Record<string, string>,
+  body?: string
+}
 
 // TODO: list all possible statuses
 export type SurrealRESTResponse<T> = {

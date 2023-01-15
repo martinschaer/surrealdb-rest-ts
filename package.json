@@ -1,6 +1,6 @@
 {
   "name": "surrealdb-rest-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stateless SurrealDB client built for serverless architectures",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

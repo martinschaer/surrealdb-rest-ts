@@ -30,3 +30,8 @@ To keep the custom adapter compatible with statefull backends, and benefit from 
   - [x] db.delete(thing)
 - consider fetch-h2 instead of node-fetch
 - unit test with DB docker image
+
+## Similar projects:
+
+- [adileo/surrealdb-ts-client](https://github.com/adileo/surrealdb-ts-client)
+- [theopensource-company/surrealdb-cloudflare](https://github.com/theopensource-company/surrealdb-cloudflare)

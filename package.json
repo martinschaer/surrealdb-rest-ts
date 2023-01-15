@@ -1,0 +1,36 @@
+{
+  "name": "surrealdb-rest-ts",
+  "version": "1.0.0",
+  "description": "Stateless SurrealDB client built for serverless architectures",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["/dist"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinschaer/surrealdb-rest-ts.git"
+  },
+  "keywords": [
+    "surrealdb",
+    "typescript"
+  ],
+  "author": "martinschaer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinschaer/surrealdb-rest-ts/issues"
+  },
+  "homepage": "https://github.com/martinschaer/surrealdb-rest-ts#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.32.0",
+    "prettier": "2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}

@@ -69,7 +69,7 @@ export class SurrealREST {
 
   async query<T>(sql: string, vars?: Record<string, unknown>): Promise<T> {
     const sqlWithVars = vars
-      ? sql.replace(/\$(\w+)/g, (_, key) => JSON.stringify(vars[key]))
+      ? sql.replace(/(?<!LET )\$(\w+)/g, (_, key) => JSON.stringify(vars[key]))
       : sql;
     const res = await fetch(
       `${this.url}/sql`,
